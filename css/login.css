@@ -1,0 +1,7 @@
+.bg-full-height {
+    height: auto;
+    min-height: 100vh;
+   background: url("../img/login-image.svg") no-repeat center fixed;
+    background-size: cover;
+    padding-bottom: 13px;
+}

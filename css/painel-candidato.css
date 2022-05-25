@@ -1,0 +1,127 @@
+body{
+    background: #EEEEEE;
+}
+.bg-vaga{
+    background: url("../img/curriculo.jpg") center no-repeat;
+    background-size: cover;
+}
+.perfil-image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display:block;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    object-fit: scale-down;
+}
+.nome{
+    font-size: 20px;    
+}
+.email{
+    font-size: 14px;
+}
+.nome, .email{
+    color: #333333;
+    font-weight: 600;
+}
+.resumo-text{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}
+.edit-button{
+    background: #344591;
+    color: white !important;
+    border-radius: 5px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+.edit-button:hover, .edit-button:focus, .details:focus, .details:hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 6px#4961CC;
+}
+article h2{
+    font-size: 22px;
+}
+article p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card{
+    border-color: transparent;
+    border-radius: 5;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.card-title{
+    font-size: 21px;
+    color: #344591;
+}
+.card-subtitle{
+    color: #707070;
+    font-size: 14px;
+}
+.situation{
+    color: #707070;
+    font-size: 17px;
+}
+.open{
+    color: #05AF2C;
+}
+.closed{
+    color: #F12121;
+}
+dl dd{
+    margin-left: 15px;
+    color: #707070;
+}
+.contact{
+    font-weight: bold;
+    font-size: 16px;
+}
+.box-shadow{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+}
+.item-price{
+    font-size: 20px;
+    color: #344591;
+    font-weight: 500;
+}
+.details{
+    background: rgba(52, 69, 145, .86);
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px transparent solid;
+}
+a.item-side-menu p{
+    color:#333333;
+}
+a.item-side-menu:hover{
+    text-decoration: none; 
+}
+a.item-side-menu:hover h4{
+    color: #1a2a72;
+}
+a.item-side-menu:hover p{
+    color:#000000;
+}
+button.fa-search{
+    background: #4961CC;
+    color: #FFF;
+  
+}
+@media (min-width: 700px){
+    .perfil-image{
+        width: 120px;
+        height: 120px;
+    }
+    .nome{
+        font-size: 22px;    
+    }
+    .email{
+        font-size: 16px;
+    }
+}

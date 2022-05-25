@@ -1,0 +1,5 @@
+.bg-full-height {
+    background: url("../img/cadastro-usuario.png") no-repeat center fixed;
+    background-size: cover;
+    padding-bottom: 13px;
+}

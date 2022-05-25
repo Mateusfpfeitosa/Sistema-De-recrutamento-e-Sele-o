@@ -1,0 +1,50 @@
+/*LOGO*/
+.logo{
+    width: 120px;
+   
+}
+/*ICON NAVBAR FOCUS and ICON NAVBAR ACTIVE*/
+.navbar-toggler:focus, .navbar-toggler:active{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+/*ICON NAVBAR BARS*/
+.fa-bars{
+    font-size: 1.1em;
+    color: #707070;
+}
+/*ICON NAVBAR X*/
+.fa-times{
+    font-size: 1.1em;
+    color: #707070;
+}
+/*ICONS INSIDE THE MENU*/
+.item-menu-icon{
+    color: #4961CC;
+    float: right;
+    margin-right: 45%;
+}
+/*BUTTON USER ACCESS*/
+.profile-access-border{
+    border: 1px solid #344591;
+    border-radius: 12px;
+}
+.profile-access-border-dropdown{
+    border-radius: 0px 0px 12px 12px;
+}
+/*TEXT FOR CONNECTED USERS*/
+.user-connected{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+/*TEXT INSIDE THE USER BUTTON*/
+.profile-name{
+    color:  #4961CC;
+}
+@media (min-width: 992px){
+    .profile-logged{
+        margin-right: 100px;
+    }
+}

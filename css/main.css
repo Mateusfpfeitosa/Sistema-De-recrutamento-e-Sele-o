@@ -1,0 +1,299 @@
+body{
+    background: #EEEEEE;
+}
+/*BACKGROUND HEADER*/
+.bg-full-height{
+    background: url("../img/bg-header-home-img.svg") no-repeat center fixed;
+    background-size: cover;
+}
+/*JUMBOTRON*/
+.search-box{
+    background: rgba(0, 0, 0, .55);
+
+}
+/*TITLES*/
+h1.first-title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+h2.second-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+/*SEARCH BUTTON*/
+button.fa-search{
+    background: #4961CC;
+    color: #FFF;
+  
+}
+/*RECOMMENDED SEARCHS*/
+.input-group-prepend:hover, button.fa-search:hover{
+    cursor: pointer;
+}
+#user-type{
+    margin-top: 10px;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.list-group{
+    border-radius: 0;
+    width: 100%;
+}
+.list-group-item{
+    padding: 8px;
+    border-radius: 0;  
+    cursor: pointer;
+    background: rgba(73, 97, 204, .70);
+    color: white;
+    font-size: 18px;
+}
+.scrollSpy{
+    position: relative;
+	overflow: auto;
+    height: auto;
+    max-height: 86px;
+}
+option{
+    font-size: 20px;
+    cursor: pointer;
+}
+.register-button{
+    background: #344591de;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 0 12px 0;
+    border-radius: 20px;
+    transition: .3s;
+    border: 2px transparent solid;
+}
+.blue{
+    background: #344591;
+}
+.register-button:hover,.register-button:focus {
+    border: 2px rgba(73, 97, 204, .70) solid;
+    color: #D3D3D3;
+}
+
+h2.h-medium{
+    font-size: 23px;
+    color: #707070;
+    margin-top: 20px; 
+}
+hr.sub{
+    width: 48px;
+    border: 4px solid #344591; 
+    border-radius: 10px;
+    margin-top: 8px;
+}
+/* CAROUSEL */
+.card-carousel{
+    border-color: transparent;
+    border-radius: 5;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    margin-bottom: 20px;
+}
+.carousel-item-title{
+    font-size: 18px;
+    color: #344591;
+}
+.carousel-item-subtitle{
+    color: #707070;
+    font-size: 17px;
+}
+.carousel-item-price{
+    font-size: 23px;
+    color: #344591;
+    font-weight: 600;
+}
+
+/*USERS COMMENTS*/
+.comments{
+    background: url("../img/grayBackground.png") no-repeat center;
+    background-size: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+    padding: 13px 0 13px 0;
+    margin-bottom: 20px;
+}
+.perfil-img{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+/* ÁREA DE DEPOIMENTOS*/
+.comments-area{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.comment{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.comment:last-child{
+    margin-bottom: 0;
+}
+.comment-divider{
+    border-color: #bbb;
+}
+.comment-name, .comment-profession{
+    color: #707070;
+    font-style: italic;
+}
+.comment-name{
+    font-size: 21px;
+    font-weight: 500;
+}
+.comment-profession{
+    font-size: 15px;
+    font-weight: 400;
+}
+.comment-text{
+    color: #707070;
+}
+.comment:last-child{
+    padding-bottom: 15px;
+}
+/*EMPRESAS QUE CONTRATAM*/
+.collaborators{
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+    padding: 13px 0 13px 0;
+    margin-bottom: 15px; 
+}
+/*EFFECTS*/
+.fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fadein {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fadein {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.fadeout {
+    -webkit-animation-name: fadeout;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeout;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fadeout {
+    from {opacity: 1} 
+    to {opacity: .4}
+}
+  
+@keyframes fadeout {
+    from {opacity: 1} 
+    to {opacity: .4}
+}
+@media (min-width:340px){
+    h1.first-title{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    h2.second-title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .search-box{
+        margin-top: 50px;
+    }
+    .register-button{
+        margin-top: 80px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+}
+@media (min-width:400px){
+    h1.first-title{
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .search-box{
+        padding-bottom: 50px;
+    }
+    h2.second-title{
+        font-size: 26px;
+    }
+    .register-button{
+        margin-top: 80px;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    #user-type{
+        margin-top: 30px;
+    }
+    .list-group-item{
+        font-size: 20px;
+    }
+    .scrollSpy{
+        max-height: 94px;
+    }
+}
+@media (min-width: 800px){
+    .collaborator-logo{
+        width: 200px;
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    h1.first-title{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h2.second-title{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    h1.first-title, h2.second-title{
+        text-align: left;
+    }
+    .comments-area{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+@media (min-width: 992px){
+    .register-button{
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .comment-text{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+           
+    }
+    .comment-name{
+        font-size: 25px;
+    }
+    .comment-profession{
+        font-size: 20px;
+    }
+    .perfil-img{
+        height: 140px;
+        width: 140px;
+    }
+
+    #site{
+        width: 800px;
+        margin: 0px auto;
+    }
+        img{
+            text-align: center;
+        }
+    
+}

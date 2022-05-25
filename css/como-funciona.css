@@ -1,0 +1,27 @@
+body{
+    background: #EEEEEE;
+}
+.full-screen{
+    background: url("../img/question.png") no-repeat center;
+    background-size: cover; 
+}
+.title{
+    font-size: 35px;
+    color: white;
+}
+.regular{
+    font-weight: 400;
+}
+.subtitle{
+    max-width: 600px;
+}
+.cards, .card-inverse{
+    background-color: #344591;
+}
+.card-common{
+    background: #e0e0e0;
+}
+.card{
+    max-width: 400px;
+    height: auto;
+}

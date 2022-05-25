@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Currículo">
+    <meta name="keywords"
+        content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, currículo, candidato">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../img/acc.jpg" />
+
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/curriculo.css">
+
+    <title>Currículo do candidato</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand" href="../index.html"><img src="../img/accenture-logo.svg" class="logo"></a>
+            <button class="navbar-toggler btn-light btn" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="fas fa-bars" id="menu-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <!--Esse link deve ser alterado para login-empresa caso o usuário não esteja logado-->
+                        <a class="nav-link text-body" id="elogin" href="login-empresa.html">Entrar no Sistema</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-body" id="CC" href="www/cadastro-candidato.html">Cadastrar Currículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" id="CC" href="www/vagas-abertas.html">Vagas Abertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="www/como-funciona.html">Como funciona</a>
+                    </li>
+                    <span class="dropdown-divider"></span>
+                    <div class="profile-logged">
+                        <!-- d-none to disappear-->
+                        <p class="user-connected text-center d-lg-none">Conectado como:</p>
+                        <li class="nav-item profile-access-border dropdown text-center">
+                            <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <!-- Esses links deverão ser alterados conforme o tipo de usuário -->
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-vaga">
+        <div class="container py-4 pad">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-12">
+                    <!-- MUDAR LINK DEPENDENDENDO DE ONDE O USUÁRIO VEIO-->
+                    <a class="btn back-button" href="../index.html" role="button"><span
+                            class="fas fa-arrow-left"></span>
+                        Voltar</a>
+                    <figure>
+                        <img class="perfil-image mx-auto" src="../img/Jose.jpg" alt="imagem do perfil">
+                        <figcaption class="nome figure-caption text-center">José Aldo Lima</figcaption>
+                        <p class="text-center email">josealdo@gmail.com</p>
+                    </figure>
+                    <h1 class="resumo mt-lg-5 mt-4 text-center">Resumo Profissional</h1>
+                    <p class="resumo-text text-center">Hobbies:
+                        Ler, dançar , cantar e futebol
+                    <p class="resumo-text text-center">
+                        Vagas compativeis
+                    </p>
+                    <p class="resumo-text text-center">
+                        Histórico de Entrevistas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-3 pad">
+        <!-- Os campos deverão ser apresentados conforme o que o usuário preencheu -->
+        <article class="idade">
+            <h2>Idade</h2>
+            <p><span>29</span> anos</p>
+        </article>
+        <article class="endereco">
+            <h2>Endereço</h2>
+            <p>Encruzilhada - Recife / PE</p>
+        </article>
+        <article class="escolaridade">
+            <h2>Escolaridade</h2>
+            <p>Ensino superior completo em Análise e Desenvolvimento de sistemas</p>
+        </article>
+        <article class="experiencias">
+            <h2>Experiências</h2>
+            <ul>
+                <li>Blue Moon Consultoria Studio</li>
+
+                <p>Designer UI Sênior</p>
+                <p>Ago 2019 - 2020 - 1 ano, Recife</p>
+            </ul>
+        </article>
+        <article class="estado-civil">
+            <h2>Estado Civil</h2>
+            <p>Casado(a)</p>
+        </article>
+        <article class="funcao-pretendida">
+            <h2>Função pretendida</h2>
+            <p>CL02</p>
+        </article>
+        <article class="informacoes-adicionais">
+            <h2>Habilidades Técnicas</h2>
+            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+        </article>
+        <article class="informacoes-adicionais">
+            <h2>Softskills</h2>
+            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+        </article>
+       </section>
+       <footer>
+        <hr class="border-white mx-3">
+        <p class="text-center copyright mb-1">Copyright 2022 Beetles - All Rights Reserved</p>
+        <p class="text-center list-title mb-0 pb-3">Desenvolvido por Talent Accenture</p>
+    </footer>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/login-cadastro.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

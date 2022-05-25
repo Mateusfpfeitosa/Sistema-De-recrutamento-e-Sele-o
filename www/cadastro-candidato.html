@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Cadastre-se e garanta o seu emprego nas melhores empresas">
+    <meta name="keywords"
+        content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, Cadastrar">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../img/acc.jpg" />
+
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/editar-curriculo.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+
+    <title>Cadastrar Currículo</title>
+</head>
+
+<body>
+    <header class="bg-full-height">
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand"  href="../index.html"><img src="../img/accenture-logo.svg" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-body" href="../www/login-empresa.html">Entrar no Sistema</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-body" id="CC" href="../www/cadastro-candidato.html">Cadastrar Currículo</a>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-body" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Processo de recrutamento
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link text-body" id="CC" href="../www/vagas-abertas.html">Vagas em aberto</a>
+                        <a class="nav-link text-body" id="CC" href="../www/painel-empresa.html">Perfis Recomendados</a>
+                     
+                    </div>
+                  </li>
+                  </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-light my-2 my-sm-0" style="background-color:rgb(161, 18, 161);" type="submit">Search</button>
+                </form>
+              </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <form action="" method="">
+                    <h2 class="container mt-4">Dados pessoais</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-5 col-sm-4 col-lg-3">
+                                <figure class="fig-input mb-0" onclick="inputImg(event)">
+                                    <img src="../img/perfil-image.jpg" class="img-fluid" id="fig-img"
+                                        alt="Imagem de perfil">
+                                </figure>
+                                <a href="" class="fig-input-sub" onclick="inputImg(event)">Modificar Imagem</a>
+                                <input class="d-none" id="img-input" type="file" name="img" accept="image/*">
+                            </div>
+                            <div class="col-7 col-sm-8 col-lg-9 pl-0">
+                                <div class="form-group">
+                                    <label for="nome" class="mb-1">Nome</label>
+                                    <input class="form-control" type="text" id="nome" name="nome"
+                                        value="Raquel Hevelin Moura">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="genero" class="mb-1">Cargo Pretendido</label>
+                                    <select class="form-control" id="text" name="nome">
+                                        <option checked>CL02</option>
+                                        <option>CL04</option>
+                                        <option>CL08</option>
+                                        <option>CL09</option>
+                                        <option>CL10</option>
+                                        <option>CL12</option>
+                                        <option>CL15</option>
+                                        <option>CL8/9</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="idade" class="mb-1">CPF</label>
+                                        <input class="form-control" type="number" id="idade" name="idade"
+                                            value="14978458421">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="genero" class="mb-1">Gênero</label>
+                                    <select class="form-control" id="genero" name="genero">
+                                        <option checked>Feminino</option>
+                                        <option>Masculino</option>
+                                        <option>Prefiro não informar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="idade" class="mb-1">Data de Nascimento</label>
+                                        <input class="form-control" type="date" id="idade" name="idade" value="29">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="estado-civil" class="mb-1">Estado Civil</label>
+                                    <select class="form-control" id="estado-civil" name="est-civil">
+                                        <option value="">Selecione</option>
+                                        <option value="solteiro">Solteiro(a)</option>
+                                        <option value="casado">Casado(a)</option>
+                                        <option value="divorciado">Divorciado(a)</option>
+                                        <option value="viuvo">Viúvo(a)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="nacionalidade" class="mb-1">Nacionalidade</label>
+                                    <select class="form-control" id="nacionalidade" name="nacionalidade">
+                                        <option value="África do Sul">África do Sul</option>
+                                        <option value="Albânia">Albânia</option>
+                                        <option value="Alemanha">Alemanha</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antigua">Antigua</option>
+                                        <option value="Arábia Saudita">Arábia Saudita</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armênia">Armênia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Austrália">Austrália</option>
+                                        <option value="Áustria">Áustria</option>
+                                        <option value="Azerbaijão">Azerbaijão</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrein">Bahrein</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Bélgica">Bélgica</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermudas">Bermudas</option>
+                                        <option value="Botsuana">Botsuana</option>
+                                        <option value="Brasil" selected>Brasil</option>
+                                        <option value="Brunei">Brunei</option>
+                                        <option value="Bulgária">Bulgária</option>
+                                        <option value="Burkina Fasso">Burkina Fasso</option>
+                                        <option value="botão">botão</option>
+                                        <option value="Cabo Verde">Cabo Verde</option>
+                                        <option value="Camarões">Camarões</option>
+                                        <option value="Camboja">Camboja</option>
+                                        <option value="Canadá">Canadá</option>
+                                        <option value="Cazaquistão">Cazaquistão</option>
+                                        <option value="Chade">Chade</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                                        <option value="Colômbia">Colômbia</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Coréia do Sul">Coréia do Sul</option>
+                                        <option value="Costa do Marfim">Costa do Marfim</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Croácia">Croácia</option>
+                                        <option value="Dinamarca">Dinamarca</option>
+                                        <option value="Djibuti">Djibuti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="EUA">EUA</option>
+                                        <option value="Egito">Egito</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Emirados Árabes">Emirados Árabes</option>
+                                        <option value="Equador">Equador</option>
+                                        <option value="Eritréia">Eritréia</option>
+                                        <option value="Escócia">Escócia</option>
+                                        <option value="Eslováquia">Eslováquia</option>
+                                        <option value="Eslovênia">Eslovênia</option>
+                                        <option value="Espanha">Espanha</option>
+                                        <option value="Estônia">Estônia</option>
+                                        <option value="Etiópia">Etiópia</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Filipinas">Filipinas</option>
+                                        <option value="Finlândia">Finlândia</option>
+                                        <option value="França">França</option>
+                                        <option value="Gabão">Gabão</option>
+                                        <option value="Gâmbia">Gâmbia</option>
+                                        <option value="Gana">Gana</option>
+                                        <option value="Geórgia">Geórgia</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Granada">Granada</option>
+                                        <option value="Grécia">Grécia</option>
+                                        <option value="Guadalupe">Guadalupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guiana">Guiana</option>
+                                        <option value="Guiana Francesa">Guiana Francesa</option>
+                                        <option value="Guiné-bissau">Guiné-bissau</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Holanda">Holanda</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungria">Hungria</option>
+                                        <option value="Iêmen">Iêmen</option>
+                                        <option value="Ilhas Cayman">Ilhas Cayman</option>
+                                        <option value="Ilhas Cook">Ilhas Cook</option>
+                                        <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                                        <option value="Ilhas Marshall">Ilhas Marshall</option>
+                                        <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                                        <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                                        <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                                        <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                                        <option value="Índia">Índia</option>
+                                        <option value="Indonésia">Indonésia</option>
+                                        <option value="Inglaterra">Inglaterra</option>
+                                        <option value="Irlanda">Irlanda</option>
+                                        <option value="Islândia">Islândia</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Itália">Itália</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japão">Japão</option>
+                                        <option value="Jordânia">Jordânia</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Líbano">Líbano</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lituânia">Lituânia</option>
+                                        <option value="Luxemburgo">Luxemburgo</option>
+                                        <option value="Macau">Macau</option>
+                                        <option value="Macedônia">Macedônia</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malásia">Malásia</option>
+                                        <option value="Malaui">Malaui</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marrocos">Marrocos</option>
+                                        <option value="Martinica">Martinica</option>
+                                        <option value="Mauritânia">Mauritânia</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="México">México</option>
+                                        <option value="Moldova">Moldova</option>
+                                        <option value="Mônaco">Mônaco</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Nicarágua">Nicarágua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigéria">Nigéria</option>
+                                        <option value="Noruega">Noruega</option>
+                                        <option value="Nova Caledônia">Nova Caledônia</option>
+                                        <option value="Nova Zelândia">Nova Zelândia</option>
+                                        <option value="Omã">Omã</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Panamá">Panamá</option>
+                                        <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                                        <option value="Paquistão">Paquistão</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Polinésia Francesa">Polinésia Francesa</option>
+                                        <option value="Polônia">Polônia</option>
+                                        <option value="Porto Rico">Porto Rico</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Quênia">Quênia</option>
+                                        <option value="Rep. Dominicana">Rep. Dominicana</option>
+                                        <option value="Rep. Tcheca">Rep. Tcheca</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romênia">Romênia</option>
+                                        <option value="Ruanda">Ruanda</option>
+                                        <option value="Rússia">Rússia</option>
+                                        <option value="Saipan">Saipan</option>
+                                        <option value="Samoa Americana">Samoa Americana</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serra Leone">Serra Leone</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Singapura">Singapura</option>
+                                        <option value="Síria">Síria</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                                        <option value="St. Lúcia">St. Lúcia</option>
+                                        <option value="St. Vincent">St. Vincent</option>
+                                        <option value="Sudão">Sudão</option>
+                                        <option value="Suécia">Suécia</option>
+                                        <option value="Suiça">Suiça</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Tailândia">Tailândia</option>
+                                        <option value="Taiwan">Taiwan</option>
+                                        <option value="Tanzânia">Tanzânia</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                        <option value="Tunísia">Tunísia</option>
+                                        <option value="Turquia">Turquia</option>
+                                        <option value="Ucrânia">Ucrânia</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Uruguai">Uruguai</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Vietnã">Vietnã</option>
+                                        <option value="Zaire">Zaire</option>
+                                        <option value="Zâmbia">Zâmbia</option>
+                                        <option value="Zimbábue">Zimbábue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="telefone" class="mb-1">Telefone</label>
+                                        <input class="form-control" pattern="\(\d{2}\)\d{4}-\d{4}" value="(18)9999-9999"
+                                            type="text" id="telefone" name="telefone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="celular" class="mb-1">Celular</label>
+                                        <input class="form-control" type="text" id="celular"
+                                            pattern="\(\d{2}\)\d{5}-\d{4}" name="celular" placeholder="(11) 99999-5555"
+                                            value="(18)99999-9999">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="telefone" class="mb-1">E-mail</label>
+                                        <input class="form-control" placeholder="example@example.com"
+                                            value="Raquel.Moura@gmail.com" type="email" id="telefone" name="telefone"
+                                            required="required">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <h2 class="container mt-4">Escolaridade</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Formação Escolar" class="mb-1">Formação Escolar</label>
+                                    <select class="form-control" id="Formação Escolar" name="Formação Escolar">
+                                        <option value="">Ensino Superior Completo</option>
+                                        <option value="">Ensino Superior - cursando</option>
+                                        <option value="">Especialização</option>
+                                        <option value="">MBA</option>
+                                        <option value="">Mestrado</option>
+                                        <option value="">Doutorado</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                       </section>
+                       <section class="container input-block">
+                        <div class="row align-items-center">
+                       <div class="col-12">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="cidade" class="mb-1">Curso</label>
+                                <input class="form-control" type="text" id="Curso" name="Curso" placeholder=""
+                                    value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                    <h2 class="container mt-4">Observações</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+
+                                    <label for="endereco" class="mb-1">Registro de nota</label>
+                                    <input class="form-control" type="text" id="endereco" name="endereco" placeholder=""
+                                        value="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="genero" class="mb-1">Status do candidato</label>
+                                    <select class="form-control" id="text" name="nome">
+                                        <option checked>Contratado</option>
+                                        <option>Banco de Talento</option>
+                                        <option>Não selecionado</option>
+                                        <option>Não entrevistado</option>
+
+                                    </select>
+                    </section>
+                    <h2 class="container mt-4">Informações complementares</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <legend class="container mb-3">Habilidades Técnicas</legend>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">Java</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">C#</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">HTML5</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">CSS3</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">PHP</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Javascript</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Phyton</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">C++</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">Kotlin</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Swift</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Perl</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Ruby</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">DataViz</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">MySQL</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">DataStudio</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">PowerBI</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">Linguagem R</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Google Go</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">Objective-C</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">SAP BO</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <strong>
+                                <p class="par text-center"> Anexar currículo</p>
+                            </strong>
+                            <center><strong><input type="file" accept=".pdf, .docx" class="arquivo"></strong></center>
+
+                        </div>
+                        <br>
+                        <br>
+                        <button class="btn btn-block btn-submit" type="submit">Enviar</button>
+                    </section>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/editar-curriculo.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

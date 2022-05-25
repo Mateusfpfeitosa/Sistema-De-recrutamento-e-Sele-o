@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Encontre as pessoas ideais para a sua empresa com os currículo da Vision Group">
+    <meta name="keywords"
+        content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, buscar">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../img/accenture-logo.svg" />
+
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/painel-empresa.css">
+
+    <title>Painel do usuário</title>
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fechar</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Têm certeza que deseja fechar a vaga?</p>
+                </div>
+                <div class="modal-footer container">
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
+                        </div>
+                        <div class="col-6">
+                            <!-- BOTÃO PARA FECHAR A VAGAS -->
+                            <button class="btn btn-primary">FECHAR VAGA</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand"  href="../index.html"><img src="../img/accenture-logo.svg" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-body" href="login-empresa.html">Entrar no Sistema</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-body" id="CC" href="cadastro-candidato.html">Cadastrar Currículo</a>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-body" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Processo de recrutamento
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link text-body" id="CC" href="vagas-abertas.html">Vagas em aberto</a>
+                        <a class="nav-link text-body" id="CC" href="painel-empresa.html ">Perfis Recomendados</a>
+                     
+                    </div>
+                  </li>
+                  </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-light my-2 my-sm-0" style="background-color:rgb(161, 18, 161);" type="submit">Search</button>
+                </form>
+              </div>
+        </nav>
+    </header>
+    <div class="dropdown">
+        <a href="painel-empresa.html" class="btn-block btn btn-white" role="button">
+            <span class="fas fa-plus-circle"></span>
+            Adicionar vaga
+        </a>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-12">
+                <section class="curriculo mt-3">
+                    <article>
+                        <h2>Perfil de candidato recomendado</h2>
+                        <p>Aquei você encontra sugestões de perfis para vaga em aberto</p>
+                    </article>
+                    <div class="container py-4 bg-white box-shadow">
+                        <!-- Quando o perfil não foi inserido -->
+                        <hgroup class="d-none">
+                            <h3 class="h4">Você ainda não adicionou o perfil da sua empresa.</h3>
+                            <h4 class="h5 text-muted">Sua empresa aparecerá como confidencial nos anúncios de vagas.
+                            </h4>
+                        </hgroup>
+                        <div class="d-block">
+                            <figure class="row align-items-center">
+                                <div class="col-4" id="responsive-col-4">
+                                    <img class="perfil-image" src="../img/Jose.jpg" alt="imagem do perfil">
+                                </div>
+                                <div class="col-8" id="responsive-col-8">
+                                    <figcaption class="nome figure-caption">José Aldo Lima</figcaption>
+                                </div>
+                            </figure>
+                            <p class="resumo-text">Designer UX/UI Junior
+                            <p>Habilidades Técnicas: Figma Adobe XD HTML CSS</p>
+                            <p>Softskills: Figma Adobe XD HTML CSS</p>
+                        </div>
+                        <a role="button" href="../curriculo.html" class="btn edit-button">
+                            <span class="fas fa-edit"></span> Abrir Perfil
+                        </a>
+                    </div>
+                    <div class="container py-4 bg-white box-shadow">
+                        <!-- Quando o perfil não foi inserido -->
+                        <hgroup class="d-none">
+                            <h3 class="h4">Você ainda não adicionou o perfil da sua empresa.</h3>
+                            <h4 class="h5 text-muted">Sua empresa aparecerá como confidencial nos anúncios de vagas.
+                            </h4>
+                        </hgroup>
+                        <div class="d-block">
+                            <figure class="row align-items-center">
+                                <div class="col-4" id="responsive-col-4">
+                                    <img class="perfil-image" src="../img/eduarda.jpg" alt="imagem do perfil">
+                                </div>
+                                <div class="col-8" id="responsive-col-8">
+                                    <figcaption class="nome figure-caption">Eduarda Lima Santiago</figcaption>
+                                </div>
+                            </figure>
+                            <p class="resumo-text">Designer UX/UI Junior
+                            <p>Habilidades Técnicas: Figma Adobe XD HTML CSS</p>
+                            <p>Softskills: Figma Adobe XD HTML CSS</p>
+                        </div>
+                        <a role="button" href="../curriculo.html" class="btn edit-button">
+                            <span class="fas fa-edit"></span> Abrir Perfil
+                        </a>
+                    </div>
+                    <div class="container py-4 bg-white box-shadow">
+                        <!-- Quando o perfil não foi inserido -->
+                        <hgroup class="d-none">
+                            <h3 class="h4">Você ainda não adicionou o perfil da sua empresa.</h3>
+                            <h4 class="h5 text-muted">Sua empresa aparecerá como confidencial nos anúncios de vagas.
+                            </h4>
+                        </hgroup>
+                        <div class="d-block">
+                            <figure class="row align-items-center">
+                                <div class="col-4" id="responsive-col-4">
+                                    <img class="perfil-image" src="../img/bruno.png" alt="imagem do perfil">
+                                </div>
+                                <div class="col-8" id="responsive-col-8">
+                                    <figcaption class="nome figure-caption">Bruno Lima Pinheiro </figcaption>
+                                </div>
+                            </figure>
+                            <p class="resumo-text">Designer UX/UI Junior
+                            <p>Habilidades Técnicas: Figma Adobe XD HTML CSS</p>
+                            <p>Softskills: Figma Adobe XD HTML CSS</p>
+                        </div>
+                        <a role="button" href="../curriculo.html" class="btn edit-button">
+                            <span class="fas fa-edit"></span> Abrir Perfil
+                        </a>
+                    </div>
+                    <div class="container py-4 bg-white box-shadow">
+                        <!-- Quando o perfil não foi inserido -->
+                        <hgroup class="d-none">
+                            <h3 class="h4">Você ainda não adicionou o perfil da sua empresa.</h3>
+                            <h4 class="h5 text-muted">Sua empresa aparecerá como confidencial nos anúncios de vagas.
+                            </h4>
+                        </hgroup>
+                        <div class="d-block">
+                            <figure class="row align-items-center">
+                                <div class="col-4" id="responsive-col-4">
+                                    <img class="perfil-image" src="../img/mariana.png" alt="imagem do perfil">
+                                </div>
+                                <div class="col-8" id="responsive-col-8">
+                                    <figcaption class="nome figure-caption">Mariana Lopes</figcaption>
+                                </div>
+                            </figure>
+                            <p class="resumo-text">Designer UX/UI Junior
+                            <p>Habilidades Técnicas: Figma Adobe XD HTML CSS</p>
+                            <p>Softskills: Figma Adobe XD HTML CSS</p>
+                        </div>
+                        <a role="button" href="../curriculo.html" class="btn edit-button">
+                            <span class="fas fa-edit"></span> Abrir Perfil
+                        </a>
+                    </div>
+                </section>
+               </div>
+
+        </div>
+    </main>
+    <footer>
+        <hr class="border-white mx-3">
+        <p class="text-center copyright mb-1">Copyright 2018 Vision Group - All Rights Reserved</p>
+        <p class="text-center list-title mb-0 pb-3">Desenvolvido por Vision Group</p>
+    </footer>
+    <script src="../js/navbar.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        col4 = document.getElementById("responsive-col-4");
+        col8 = document.getElementById("responsive-col-8");
+        if (window.innerWidth >= 700)
+            gridresponsive();
+        window.addEventListener("resize", function () {
+            if (window.innerWidth >= 700)
+                gridresponsive();
+            else {
+                col4.classList.remove("col-3");
+                col8.classList.remove("col-9");
+                col4.classList.add("col-4");
+                col8.classList.add("col-8");
+            }
+        })
+        function gridresponsive() {
+            col4.classList.add("col-3");
+            col8.classList.add("col-9");
+            col4.classList.remove('col-4');
+            col8.classList.remove('col-8');
+        }
+
+        //Show modal
+        buttons = document.querySelectorAll(".edit-button-danger");
+        buttons.forEach(function (e) {
+            e.addEventListener('click', function (e) {
+                e.preventDefault();
+                $('.modal').modal('show');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

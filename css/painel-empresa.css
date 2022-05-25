@@ -1,0 +1,151 @@
+body{
+    background: #EEEEEE;
+}
+.btn-white{
+    background: #fff;
+    border-radius: 0;
+    border:none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    color: #344591;
+    font-size: 19px;
+    font-weight: 400;
+}
+.perfil-image{
+    border-radius: 20%;
+    width: 100px;
+    height: 100px;
+    display:block;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    object-fit: scale-down;
+}
+.nome{
+    font-size: 20px;    
+}
+.email{
+    font-size: 14px;
+}
+.nome, .email{
+    color: #333333;
+    font-weight: 600;
+}
+.resumo-text{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}
+.close-icon{
+    color: white !important;
+    font-size: 15px;
+}
+.arrow-icon{
+    font-size: 30px;
+    color: #344591;
+}
+.edit-button-danger, .edit-button{
+    color: white !important;
+    border-radius: 5px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+.edit-button-danger{
+    background: #cc2b2b;
+}
+.edit-button{
+    background: #344591;
+}
+.edit-button-danger:focus, .edit-button-danger:hover{
+    box-shadow: 0px 0px 6px #f51212;
+}
+.edit-button:hover, .edit-button:focus, .details:focus, .details:hover{
+    box-shadow: 0px 0px 6px#4961CC;
+}
+.edit-button:hover, .edit-button:focus, .details:focus, .details:hover, .edit-button-danger:hover, .edit-button-danger:focus{
+    text-decoration: none;
+    color: white;
+}
+article h2{
+    font-size: 22px;
+}
+article p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card{
+    border-color: transparent;
+    border-radius: 5;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.card-qtd-vagas{
+    font-size: 17px;
+    font-style: italic;
+}
+.card-title{
+    font-size: 21px;
+    color: #344591;
+}
+.card-subtitle{
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+}
+.situation{
+    color: #707070;
+    font-size: 17px;
+}
+
+.contact{
+    font-weight: bold;
+    font-size: 16px;
+}
+.box-shadow{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+}
+.item-price{
+    font-size: 20px;
+    color: #344591;
+    font-weight: 500;
+}
+.details{
+    background: rgba(52, 69, 145, .86);
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px transparent solid;
+}
+a.item-side-menu p{
+    color:#333333;
+}
+a.item-side-menu:hover{
+    text-decoration: none; 
+}
+a.item-side-menu:hover h4{
+    color: #1a2a72;
+}
+a.item-side-menu:hover p{
+    color:#000000;
+}
+button.fa-search{
+    background: #4961CC;
+    color: #FFF;
+  
+}
+@media (min-width: 700px){
+    .perfil-image{
+        width: 120px;
+        height: 120px;
+    }
+    .nome{
+        font-size: 22px;    
+    }
+    .email{
+        font-size: 16px;
+    }
+}
+@media (max-width:380px) {
+    .edit-button-danger, .edit-button, .close-icon{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,58 @@
+body{
+    background: #EEEEEE;
+}
+/* HOVER IMAGE EFFECT*/
+figure.fig-input img{
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    object-fit: scale-down;
+}
+
+.fig-input-sub{
+    font-size: 14px;
+}
+h2{
+    font-size:22px;
+    font-weight: 500;
+    color: #333333;
+}
+.input-block{
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+}
+label:not(.common), legend{
+    font-weight: 500;
+    font-size: 17px ;
+}
+.btn-submit{
+    background: #344591;
+    color: white;
+    font-weight: 500;
+}
+
+.card-title{
+    font-size: 21px;
+    color: #344591;
+}
+a.item-side-menu p{
+    color:#333333;
+}
+a.item-side-menu:hover{
+    text-decoration: none; 
+}
+a.item-side-menu:hover h4{
+    color: #1a2a72;
+}
+a.item-side-menu:hover p{
+    color:#000000;
+}
+button.fa-search{
+    background: #4961CC;
+    color: #FFF;
+  
+}

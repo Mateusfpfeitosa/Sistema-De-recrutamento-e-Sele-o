@@ -1,0 +1,88 @@
+body{
+    background: #EEEEEE;
+}
+.bg-vaga{
+    background: url("../img/vaga.jpg") center no-repeat;
+    background-size: cover;
+}
+.back-button{
+    background: #4961CC;
+    color: white;
+    border-radius: 5px; 
+}
+.back-button:hover, .back-button:focus, .button:hover, .button:focus, .button-pow:focus, .button-pow:hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 15px#4961CC;
+}
+.vaga-title{
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+.data{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+.info-item{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.list-icon{
+    color: #4961CC;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.info-item-type{
+    font-size: 18px;
+    font-weight: 500;
+}
+article h2{
+    font-size: 22px;
+}
+article p, article ul li{
+    font-size: 16px;
+    font-weight: 400;
+}
+article ul{
+    list-style: none;
+}
+article ul li::before{
+    content: "\2022";  
+    color: #344591;
+    font-weight: 900;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+    font-size: 20px;
+}
+.button, .button-pow{
+    background: #344591;
+    color: white;
+    font-weight: bold;
+}
+.button{
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.button-pow{
+    background: rgba(52, 69, 145, .80) !important;
+    font-size: 22px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (min-width: 800px){
+    .pad{
+        width: 88%;
+        padding-right: 40%;
+    }
+}
+@media (min-width: 992px){
+    .pad{
+        width: 88%;
+        padding-right: 30%;
+    }
+}
